@@ -51,3 +51,5 @@ github "charles",    "1.0.2"
 github "libreoffice",    "4.0.4"
 
 github "hipchat",    "1.0.7"
+
+github "foreman",   "1.0.0"
