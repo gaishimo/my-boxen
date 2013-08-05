@@ -36,3 +36,18 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "java",     "1.1.2"
+
+github "dropbox",     "1.1.1"
+github "chrome",      "1.1.1"
+github "opera",       "0.0.5"
+github "firefox",       "1.1.1"
+
+github "sublime_text_2",    "1.1.2"
+github "sequel_pro",    "1.0.0"
+github "skype",    "1.0.3"
+github "charles",    "1.0.2"
+github "libreoffice",    "4.0.4"
+
+github "hipchat",    "1.0.7"
