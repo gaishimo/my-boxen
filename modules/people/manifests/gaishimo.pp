@@ -30,7 +30,8 @@ class people::gaishimo {
       'tmux',
       'wget',
       'z',
-      'zsh'
+      'zsh',
+      'ImageMagick'
     ]:
   }
 
