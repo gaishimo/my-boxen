@@ -14,8 +14,9 @@ class people::gaishimo {
   include charles
   include libreoffice
   include hipchat
-
+  include skitch
   include foreman
+
 
   # install by homebrew
   package {

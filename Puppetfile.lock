@@ -109,6 +109,11 @@ GITHUBTARBALL
     sequel_pro (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-skitch
+  specs:
+    skitch (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
     skype (1.0.3)
@@ -162,6 +167,7 @@ DEPENDENCIES
   repository (= 2.2.0)
   ruby (= 6.3.0)
   sequel_pro (= 1.0.0)
+  skitch (= 1.0.2)
   skype (= 1.0.3)
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
