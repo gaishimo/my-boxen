@@ -4,6 +4,8 @@ class people::gaishimo {
   include skype
 
   include java
+  include virtualbox
+
   include chrome
   include opera
   include firefox
