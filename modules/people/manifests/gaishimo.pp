@@ -43,6 +43,9 @@ class people::gaishimo {
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
-  }
+     'Kobito':
+      source => "http://kobito.qiita.com/download/Kobito_v1.6.1.zip",
+      provider => compressed_app;
+   }
 
 }
