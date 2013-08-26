@@ -11,6 +11,8 @@ class people::gaishimo {
   include firefox
   include dropbox
   include sublime_text_2
+  include sublime_text_3
+  
   include sequel_pro
   include skype
   include charles
@@ -45,9 +47,9 @@ class people::gaishimo {
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
-     'Kobito':
+    'Kobito':
       source => "http://kobito.qiita.com/download/Kobito_v1.6.1.zip",
-      provider => compressed_app;
+      provider => compressed_app; 
    }
 
 }

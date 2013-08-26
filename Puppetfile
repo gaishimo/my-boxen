@@ -47,10 +47,11 @@ github "opera",       "0.0.5"
 github "firefox",       "1.1.1"
 
 github "sublime_text_2",    "1.1.2"
+github "sublime_text_3",    "1.0.0",  :repo => "jozefizso/puppet-sublime_text_3"
+
 github "sequel_pro",    "1.0.0"
 github "skype",    "1.0.3"
 github "charles",    "1.0.2"
 github "libreoffice",    "4.0.4"
 github "hipchat",    "1.0.7"
 github "skitch",    "1.0.2"
-
