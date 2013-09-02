@@ -5,13 +5,14 @@ class people::gaishimo {
 
   include java
   include virtualbox
+  include vagrant
 
   include chrome
   include opera
   include firefox
   include dropbox
-  include sublime_text_2
-  include sublime_text_3
+#  include sublime_text_2
+#  include sublime_text_3
   
   include sequel_pro
   include skype
