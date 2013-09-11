@@ -56,3 +56,5 @@ github "charles",    "1.0.2"
 github "libreoffice",    "4.0.4"
 github "hipchat",    "1.0.7"
 github "skitch",    "1.0.2"
+
+github "gpg",   "0.0.4",     :repo => "steinim/puppet-gpg"

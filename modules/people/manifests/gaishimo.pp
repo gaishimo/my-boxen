@@ -22,6 +22,8 @@ class people::gaishimo {
   include skitch
   include foreman
 
+  include gpg
+
 
   # install by homebrew
   package {

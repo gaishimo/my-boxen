@@ -158,6 +158,11 @@ GITHUBTARBALL
   specs:
     stdlib (4.1.0)
 
+GITHUBTARBALL
+  remote: steinim/puppet-gpg
+  specs:
+    gpg (0.0.4)
+
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 3.0.1)
@@ -169,6 +174,7 @@ DEPENDENCIES
   foreman (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
+  gpg (= 0.0.4)
   hipchat (= 1.0.7)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
