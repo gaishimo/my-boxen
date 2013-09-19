@@ -21,6 +21,7 @@ class people::gaishimo {
   include hipchat
   include skitch
   include foreman
+  include kindle
 
   include gpg
 
@@ -52,7 +53,7 @@ class people::gaishimo {
       provider => pkgdmg;
     'Kobito':
       source => "http://kobito.qiita.com/download/Kobito_v1.6.1.zip",
-      provider => compressed_app; 
+      provider => compressed_app;
    }
 
 }
