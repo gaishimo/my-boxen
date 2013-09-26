@@ -49,6 +49,7 @@ github "firefox",       "1.1.1"
 
 github "sublime_text_2",    "1.1.2"
 github "sublime_text_3",    "1.0.0",  :repo => "jozefizso/puppet-sublime_text_3"
+github "macvim", "1.0.0"
 
 github "sequel_pro",    "1.0.0"
 github "skype",    "1.0.3"

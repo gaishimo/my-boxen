@@ -79,6 +79,11 @@ GITHUBTARBALL
     libreoffice (4.0.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-macvim
+  specs:
+    macvim (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -187,6 +192,7 @@ DEPENDENCIES
   java (= 1.1.2)
   kindle (= 1.0.1)
   libreoffice (= 4.0.4)
+  macvim (= 1.0.0)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
