@@ -13,6 +13,7 @@ class people::gaishimo {
   include dropbox
 #  include sublime_text_2
 #  include sublime_text_3
+  include iterm2::stable
 
   include sequel_pro
   include skype
