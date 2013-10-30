@@ -46,9 +46,9 @@ class people::gaishimo {
   }
 
   package {
-    'XtraFinder':
-      source   => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
-      provider => pkgdmg;
+#    'XtraFinder':
+#     source   => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
+#      provider => pkgdmg;
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
