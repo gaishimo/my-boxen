@@ -59,5 +59,6 @@ github "libreoffice",    "4.0.4"
 github "hipchat",    "1.0.7"
 github "skitch",    "1.0.2"
 github "kindle",    "1.0.1"
+github "divvy",   "1.0.1"
 
 github "gpg",   "0.0.4",     :repo => "steinim/puppet-gpg"

@@ -23,7 +23,7 @@ class people::gaishimo {
   include skitch
   include foreman
   include kindle
-
+  include divvy
   include gpg
 
 
@@ -57,6 +57,9 @@ class people::gaishimo {
       provider => compressed_app;
     'MacVim-KaoriYa':
       source  => "https://macvim-kaoriya.googlecode.com/files/macvim-kaoriya-20130911.dmg",
+      provider => appdmg;
+    'ClipMenu':
+      source => "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg",
       provider => appdmg;
    }
 
