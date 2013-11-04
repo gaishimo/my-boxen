@@ -5,7 +5,7 @@ class people::gaishimo {
   include osx::finder::empty_trash_securely
   include osx::no_network_dsstores
   include osx::software_update
-  class { 'osx::dock::icon_size': 
+  class { 'osx::dock::icon_size':
     size => 36
   }
 
@@ -43,7 +43,7 @@ class people::gaishimo {
   include firefox
   include dropbox
 #  include sublime_text_2
-  include sublime_text_3
+#  include sublime_text_3
   include iterm2::stable
 
   include sequel_pro
@@ -55,7 +55,7 @@ class people::gaishimo {
   include foreman
   include kindle
   include gpg
-  
+
 
   # install by homebrew
   package {
@@ -87,7 +87,7 @@ class people::gaishimo {
       source => "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg",
       provider => appdmg;
   }
-  
+
   package {
    'zsh':
      install_options => [
@@ -114,9 +114,9 @@ class people::gaishimo {
 
   file {
     "/opt/boxen/bin/subl":
-      ensure => link,  
+      ensure => link,
       target => "/opt/boxen/bin/subl3";
-  } 
+  }
 
 
 }
