@@ -1,4 +1,14 @@
 class people::gaishimo {
+
+  $home     = "/Users/${::luser}"
+
+  include osx::finder::empty_trash_securely
+  include osx::no_network_dsstores
+  include osx::software_update
+  class { 'osx::dock::icon_size': 
+    size => 36
+  }
+
   class { 'ruby::global':
     version => '2.0.0-p247'
   }
@@ -23,7 +33,9 @@ class people::gaishimo {
   include virtualbox
   include vagrant
 
-#  include mysql
+  include nginx
+
+  include mysql
   include mongodb
 
   include chrome
@@ -31,7 +43,7 @@ class people::gaishimo {
   include firefox
   include dropbox
 #  include sublime_text_2
-#  include sublime_text_3
+  include sublime_text_3
   include iterm2::stable
 
   include sequel_pro
@@ -42,7 +54,6 @@ class people::gaishimo {
   include skitch
   include foreman
   include kindle
-  include divvy
   include gpg
   
 
@@ -52,15 +63,12 @@ class people::gaishimo {
       'isl011',
       'libevent',
       'libtool',
-#      'mongodb',
-#      'mysql',
       'memcached',
       'oniguruma',
       'redis',
       'tmux',
       'wget',
       'z',
-      'zsh',
       'ImageMagick'
     ]:
    }
@@ -79,5 +87,36 @@ class people::gaishimo {
       source => "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg",
       provider => appdmg;
   }
+  
+  package {
+   'zsh':
+     install_options => [
+       '--disable-etcdir'
+     ];
+  }
+  file_line { 'add zsh to /etc/shells':
+    path    => '/etc/shells',
+    line    => "${boxen::config::homebrewdir}/bin/zsh",
+    require => Package['zsh'],
+    before  => Osx_chsh[$::luser];
+  }
+  osx_chsh { $::luser:
+    shell   => "${boxen::config::homebrewdir}/bin/zsh";
+  }
+
+#  include sublime_text_3::package_control
+#  sublime_text_3::package { 'Emmet':
+#    source => 'sergeche/emmet-sublime'
+#  }
+#  sublime_text_3::package { 'Theme - Cobalt2':
+#    source => 'wesbos/cobalt2'
+#  }
+
+  file {
+    "/opt/boxen/bin/subl":
+      ensure => link,  
+      target => "/opt/boxen/bin/subl3";
+  } 
+
 
 }

@@ -37,6 +37,8 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "osx",        "2.0.0"
+
 github "java",     "1.1.2"
 github "foreman",   "1.0.0"
 github "virtualbox", "1.0.5"
@@ -45,7 +47,7 @@ github "vagrant", "2.0.10"
 # github "mysql", "1.99.3"
 github "mongodb", "1.0.5"
 
-github "dropbox",     "1.1.1"
+github "dropbox",  "1.1.2"
 github "chrome",      "1.1.1"
 github "opera",       "0.0.5"
 github "firefox",       "1.1.1"

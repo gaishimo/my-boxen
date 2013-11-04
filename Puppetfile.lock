@@ -26,7 +26,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
-    dropbox (1.1.1)
+    dropbox (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-firefox
@@ -107,6 +107,11 @@ GITHUBTARBALL
   remote: boxen/puppet-opera
   specs:
     opera (0.0.5)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -195,7 +200,7 @@ DEPENDENCIES
   chrome (= 1.1.1)
   divvy (= 1.0.1)
   dnsmasq (= 1.0.0)
-  dropbox (= 1.1.1)
+  dropbox (= 1.1.2)
   firefox (= 1.1.1)
   foreman (= 1.0.0)
   gcc (= 2.0.1)
@@ -215,6 +220,7 @@ DEPENDENCIES
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
   opera (= 0.0.5)
+  osx (= 2.0.0)
   repository (= 2.2.0)
   ruby (= 6.3.4)
   sequel_pro (= 1.0.0)
