@@ -1,11 +1,30 @@
 class people::gaishimo {
-  # 自分の環境で欲しいresourceをincludeする
+  class { 'ruby::global':
+    version => '2.0.0-p247'
+  }
+  ruby::version { '1.9.3-p194': }
+  ruby::plugin {
+    'rbenv-vars':
+      ensure => 'v1.2.0',
+      source => 'sstephenson/rbenv-vars'
+  }
+  $version = '2.0.0-p247'
+  ruby::gem{
+    "pry for ${version}":
+      gem => 'pry',
+      ruby => $version,
+      version => '>= 0.9'
+  }
+
   include dropbox
   include skype
 
   include java
   include virtualbox
   include vagrant
+
+#  include mysql
+  include mongodb
 
   include chrome
   include opera
@@ -25,16 +44,17 @@ class people::gaishimo {
   include kindle
   include divvy
   include gpg
-
+  
 
   # install by homebrew
   package {
     [
+      'isl011',
       'libevent',
       'libtool',
-      'mongodb',
+#      'mongodb',
+#      'mysql',
       'memcached',
-      'mysql',
       'oniguruma',
       'redis',
       'tmux',
@@ -43,12 +63,9 @@ class people::gaishimo {
       'zsh',
       'ImageMagick'
     ]:
-  }
+   }
 
   package {
-#    'XtraFinder':
-#     source   => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
-#      provider => pkgdmg;
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
@@ -61,6 +78,6 @@ class people::gaishimo {
     'ClipMenu':
       source => "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg",
       provider => appdmg;
-   }
+  }
 
 }

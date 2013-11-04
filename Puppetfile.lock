@@ -9,14 +9,14 @@ GITHUBTARBALL
     boxen (3.0.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-charles
-  specs:
-    charles (1.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
     chrome (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-divvy
+  specs:
+    divvy (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -79,14 +79,14 @@ GITHUBTARBALL
     kindle (1.0.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-libreoffice
-  specs:
-    libreoffice (4.0.4)
-
-GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mongodb
+  specs:
+    mongodb (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -159,9 +159,19 @@ GITHUBTARBALL
     xquartz (1.1.0)
 
 GITHUBTARBALL
+  remote: gaishimo/puppet-libreoffice
+  specs:
+    libreoffice (1.0.1)
+
+GITHUBTARBALL
   remote: jozefizso/puppet-sublime_text_3
   specs:
     sublime_text_3 (1.0.0)
+
+GITHUBTARBALL
+  remote: niclasnilsson/puppet-charles
+  specs:
+    charles (1.0.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -181,8 +191,9 @@ GITHUBTARBALL
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 3.0.2)
-  charles (= 1.0.2)
+  charles (= 1.0.3)
   chrome (= 1.1.1)
+  divvy (= 1.0.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
   firefox (= 1.1.1)
@@ -197,8 +208,9 @@ DEPENDENCIES
   iterm2 (= 1.0.3)
   java (= 1.1.2)
   kindle (= 1.0.1)
-  libreoffice (= 4.0.4)
+  libreoffice (= 1.0.1)
   macvim (= 1.0.0)
+  mongodb (= 1.0.5)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
