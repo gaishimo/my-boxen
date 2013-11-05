@@ -86,6 +86,9 @@ class people::gaishimo {
     'ClipMenu':
       source => "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg",
       provider => appdmg;
+    'Sophos Anti-Virus':
+      source => "http://downloads.sophos.com/home-edition/savosx_90_he.zip",
+      provider => compressed_app
   }
 
   package {
