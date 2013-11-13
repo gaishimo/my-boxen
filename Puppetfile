@@ -44,7 +44,7 @@ github "foreman",   "1.0.0"
 github "virtualbox", "1.0.5"
 github "vagrant", "2.0.10"
 
-# github "mysql", "1.99.3"
+# github "mysql", "1.1.5"
 github "mongodb", "1.0.5"
 
 github "dropbox",  "1.1.2"
@@ -66,4 +66,5 @@ github "skitch",    "1.0.2"
 github "kindle",    "1.0.1"
 github "divvy",   "1.0.1"
 
+github "imagemagick", "1.2.1"
 github "gpg",   "0.0.4",     :repo => "steinim/puppet-gpg"
