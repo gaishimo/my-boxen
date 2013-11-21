@@ -49,6 +49,11 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-heroku
+  specs:
+    heroku (2.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-hipchat
   specs:
     hipchat (1.0.7)
@@ -62,6 +67,11 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-imagemagick
+  specs:
+    imagemagick (1.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -206,9 +216,11 @@ DEPENDENCIES
   gcc (= 2.0.1)
   git (= 1.2.5)
   gpg (= 0.0.4)
+  heroku (= 2.1.1)
   hipchat (= 1.0.7)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
+  imagemagick (= 1.2.1)
   inifile (= 1.0.0)
   iterm2 (= 1.0.3)
   java (= 1.1.2)

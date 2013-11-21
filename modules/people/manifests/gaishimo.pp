@@ -33,7 +33,8 @@ class people::gaishimo {
   include virtualbox
   include vagrant
 
-  include nginx
+  # cannot install on mavericks
+#  include nginx
 
   include mysql
   include mongodb
@@ -61,10 +62,12 @@ class people::gaishimo {
     update => true,
   }
 
+  include imagemagick
 
   # install by homebrew
   package {
     [
+      'gd',
       'isl011',
       'libevent',
       'libtool',
@@ -72,9 +75,7 @@ class people::gaishimo {
       'oniguruma',
       'redis',
       'tmux',
-      'wget',
-      'z',
-      'ImageMagick'
+      'wget'
     ]:
    }
 
@@ -122,6 +123,9 @@ class people::gaishimo {
       ensure => link,
       target => "/opt/boxen/bin/subl3";
   }
+
+  # want to add setting
+  # heroku-toolbelt
 
 
 }
